@@ -21,7 +21,10 @@ module.exports = {
       'highlight-yellow': '#f9ed69',
       'input-grey':"#f8f9fb",
       'black':"#000",
-      'turbo-blue':'#0b57f5'
+      'turbo-blue':'#0b57f5',
+      'darkest-blue':'#0e3ea3',
+      'sky-blue': '#76a3ff',
+      'bumblebee':'#fbc813'
     },
     extend: {
       fontFamily: {
