@@ -40,9 +40,9 @@ const LoginPage3 = () => {
           <div className="h-5 w-5 mr-3 font-serif bg-grafhi-gray rounded-full transform rotate-90"></div>Continue with Google
         </button>
         <div className="text-sm">
-          <a href="javascript:void(0)" className="hover:underline text-darkblue font-bold">I forgot my password</a><br/>
+          <button className="hover:underline text-darkblue font-bold">I forgot my password</button><br/>
           Don't have an account?
-          <a href="javascript:void(0)" className="hover:underline text-darkblue font-bold"> Sign Up</a>
+          <button className="hover:underline text-darkblue font-bold"> Sign Up</button>
         </div>
       </div>
     </div>
