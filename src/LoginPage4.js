@@ -1,14 +1,23 @@
 import React from 'react';
+import logoDesktop from './assets/logoDesktop.png';
+import logoMobile from './assets/logoMobile.png';
+import { useMediaQuery } from 'react-responsive';
 
 const LoginPage4 = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <div className="flex min-h-screen">
       {/* Left section with yellow background and welcome message */}
       <div className="w-1/2 flex items-center justify-center relative bg-highlight-yellow">
         <div className="absolute top-4 left-4 text-black flex items-center">
+        {isMobile ? (
+              <img src={logoMobile} alt="Logo" className="h-8 w-8" />
+            ) : (
+              <img src={logoDesktop} alt="Logo" className="h-10 w-30" />
+            )}
           <div className="h-8 w-8 bg-white rounded-full mr-2 flex items-center justify-center">
           </div>
-          <span className="text-xl font-bold">Grafhi</span>
         </div>
         <div className="text-black px-8 py-12">
           <h1 className="ml-60 mt-20 mr-80 text-5xl font-bold">Welcome to Grafhi.</h1>
